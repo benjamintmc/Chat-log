@@ -12,10 +12,10 @@ def formatting(log):
 	for line in log:
 		if line == 'Allen':
 			person = 'Allen'
-			continue
+			continue # go directly into next loop
 		elif line == 'Tom':
 			person = 'Tom'
-			continue
+			continue # go directly into next loop
 		if person: # if person exists
 			formated.append(person + ': ' + line)
 	return formated
