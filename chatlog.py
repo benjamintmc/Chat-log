@@ -8,6 +8,9 @@ def read_file(filename):
     return log
 def formatting(log):
     person = None # just to prevent if there is no Allen or Tom in first line of chatlog
+    # person = '123'
+    # if person != '123':
+    # 	formated.apend(person + ': ' + line)
     formated = []
     for line in log:
         if line == 'Allen':
