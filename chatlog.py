@@ -2,7 +2,7 @@ import os
 # define function
 def read_file(filename):
 	log = []
-	with open(filename, 'r', encoding='UTF-8') as f:
+	with open(filename, 'r', encoding='UTF-8-SIG') as f:
 		for line in f:
 			log.append(line.strip())
 	return log
@@ -10,10 +10,10 @@ def formatting(log):
 	person = None
 	formated = []
 	for line in log:
-		if 'Allen' in line:
+		if line == 'Allen':
 			person = 'Allen'
 			continue
-		elif 'Tom' in line:
+		elif line == 'Tom':
 			person = 'Tom'
 			continue
 		if person: # if person exists
