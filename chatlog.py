@@ -8,6 +8,7 @@ def read_file(filename):
     return log
 def formatting(log):
     person = None # just to prevent if there is no Allen or Tom in first line of chatlog
+    			  # indicate that person has no value
     # person = '123'
     # if person != '123':
     # 	formated.apend(person + ': ' + line)
@@ -19,7 +20,7 @@ def formatting(log):
         elif line == 'Tom':
             person = 'Tom'
             continue # go directly into next loop
-        if person: # if person exists
+        if person: # if person has value
             formated.append(person + ': ' + line)
     return formated
 def write_file(outputname, formated):
